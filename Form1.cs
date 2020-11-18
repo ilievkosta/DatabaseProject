@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DatabaseProject
 {
@@ -15,7 +16,13 @@ namespace DatabaseProject
     {
         public void LoadData()
         {
-            string cs = @"URI=file:C:\Users\Game\source\repos\DatabaseProject\Coordinates.db";
+            
+
+            string pathToFile = AppDomain.CurrentDomain.BaseDirectory;
+            string newPath = Path.GetFullPath(Path.Combine(pathToFile, @"..\..\"));
+            string cs = @"Data Source=" + newPath + "Coordinates.db" + ";Pooling=true;FailIfMissing=false;Version=3";
+
+
 
             SQLiteConnection con = new SQLiteConnection(cs);
             con.Open();
@@ -44,7 +51,9 @@ namespace DatabaseProject
 
         private void buttonToDatabase_Click(object sender, EventArgs e)
         {
-            string cs = @"URI=file:C:\Users\Game\source\repos\DatabaseProject\Coordinates.db";
+            string pathToFile = AppDomain.CurrentDomain.BaseDirectory;
+            string newPath = Path.GetFullPath(Path.Combine(pathToFile, @"..\..\"));
+            string cs = @"Data Source=" + newPath + "Coordinates.db" + ";Pooling=true;FailIfMissing=false;Version=3";
 
             SQLiteConnection con = new SQLiteConnection(cs);
             con.Open();
@@ -91,7 +100,10 @@ namespace DatabaseProject
 
                     if (dataGridView1.CurrentRow != null)
                     {
-                        string cs = @"URI=file:C:\Users\Game\source\repos\DatabaseProject\Coordinates.db";
+                        string pathToFile = AppDomain.CurrentDomain.BaseDirectory;
+                        string newPath = Path.GetFullPath(Path.Combine(pathToFile, @"..\..\"));
+                        string cs = @"Data Source=" + newPath + "Coordinates.db" + ";Pooling=true;FailIfMissing=false;Version=3";
+
 
                         SQLiteConnection con = new SQLiteConnection(cs);
                         con.Open();

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DatabaseProject.Properties
+namespace CoordinatesWithDatabase.Properties
 {
 
 

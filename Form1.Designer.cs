@@ -56,27 +56,27 @@
             this.labelName.AutoSize = true;
             this.labelName.Location = new System.Drawing.Point(34, 20);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(35, 13);
+            this.labelName.Size = new System.Drawing.Size(57, 13);
             this.labelName.TabIndex = 0;
-            this.labelName.Text = "Name";
+            this.labelName.Text = "labelName";
             // 
             // labelJobTitle
             // 
             this.labelJobTitle.AutoSize = true;
             this.labelJobTitle.Location = new System.Drawing.Point(35, 59);
             this.labelJobTitle.Name = "labelJobTitle";
-            this.labelJobTitle.Size = new System.Drawing.Size(47, 13);
+            this.labelJobTitle.Size = new System.Drawing.Size(66, 13);
             this.labelJobTitle.TabIndex = 1;
-            this.labelJobTitle.Text = "Job Title";
+            this.labelJobTitle.Text = "labelJobTitle";
             // 
             // labelText
             // 
             this.labelText.AutoSize = true;
             this.labelText.Location = new System.Drawing.Point(271, 23);
             this.labelText.Name = "labelText";
-            this.labelText.Size = new System.Drawing.Size(28, 13);
+            this.labelText.Size = new System.Drawing.Size(50, 13);
             this.labelText.TabIndex = 2;
-            this.labelText.Text = "Text";
+            this.labelText.Text = "labelText";
             // 
             // textBoxName
             // 
@@ -107,7 +107,7 @@
             this.buttonToDatabase.Name = "buttonToDatabase";
             this.buttonToDatabase.Size = new System.Drawing.Size(119, 30);
             this.buttonToDatabase.TabIndex = 6;
-            this.buttonToDatabase.Text = "Save to Database";
+            this.buttonToDatabase.Text = "buttonToDatabase";
             this.buttonToDatabase.UseVisualStyleBackColor = true;
             this.buttonToDatabase.Click += new System.EventHandler(this.buttonToDatabase_Click);
             // 
@@ -116,9 +116,9 @@
             this.labelDescription.AutoSize = true;
             this.labelDescription.Location = new System.Drawing.Point(35, 90);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(60, 13);
+            this.labelDescription.Size = new System.Drawing.Size(82, 13);
             this.labelDescription.TabIndex = 7;
-            this.labelDescription.Text = "Description";
+            this.labelDescription.Text = "labelDescription";
             this.labelDescription.Click += new System.EventHandler(this.labelDescription_Click);
             // 
             // textBoxDescription
